@@ -4,7 +4,7 @@
 const addEventOnElem = function (elem, type, callback) {
     if (elem.length > 1) {
         for (let i = 0; i < elem.length; i++) {
-            elem[i].adEventListener(type, callback);
+            elem[i].addEventListener(type, callback);
         }
     } else {
         elem.addEventListener(type, callback);
@@ -13,7 +13,7 @@ const addEventOnElem = function (elem, type, callback) {
 
 /** navbar toggle */
 const navbar = document.querySelector("[data-navbar]");
-const navLinks = document.querySelectorAll("[data-nav-link]");
+const navbarLinks = document.querySelectorAll("[data-nav-link]");
 const navToggler = document.querySelector("[data-nav-toggler]");
 
 const toggleNavbar = function () {
@@ -23,3 +23,24 @@ const toggleNavbar = function () {
 }
 
 addEventOnElem(navToggler, "click", toggleNavbar);
+
+const closeNavbar = function () {
+    navbar.classList.remove("active");
+    navToggler.classList.remove("active");
+    document.body.classList.remove("active");
+}
+
+addEventOnElem(navbarLinks, "click", closeNavbar);
+
+/** header active */
+const header = document.querySelector("[data-header]");
+
+const activeHeader = function () {
+    if (window.scrollY > 300) {
+        header.classList.add("active");
+    } else {
+        header.classList.remove("active");
+    }
+}
+
+addEventOnElem(window, "scrollY", activeHeader);
