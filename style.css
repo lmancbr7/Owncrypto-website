@@ -107,6 +107,21 @@ body{
 
 /* Reused Style */
 .container{ padding-inline: 15px; }
+.btn{
+    color: var(--white);
+    border-radius: 50px;
+}
+.btn-outline{
+    font-size: var(--fs-6);
+    font-weight: var(--fw-500);
+    border: 1px solid var(--white);
+    padding: 5px 15px;
+    transition: var(--transition-1);
+}
+.btn-outline:is(:hover, :focus){
+    background-color: var(--blue-crayola);
+    border-color: var(--blue-crayola);
+}
 
 /* Header */
 .navbar{ display: none; }
@@ -162,3 +177,6 @@ body{
     padding: 8px 5px;
     margin-inline-start: auto;
 }
+.nav-toggle-btn.active .line-1{ transform: rotate(45deg) translate(5px, 6px); }
+.nav-toggle-btn.active .line-2{ opacity: 0; }
+.nav-toggle-btn.active .line-3{ transform: rotate(-45deg) translate(4px, -5px); }
