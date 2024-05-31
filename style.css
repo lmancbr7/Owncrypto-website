@@ -149,6 +149,28 @@ body.active{ overflow: hidden; }
     transform: translateX(0);
     opacity: 1;
 }
+.section{ padding-block: var(--section-padding); }
+/*[data-section] > *{
+    transform: translateY(50px);
+    opacity: 0;
+    transition: var(--transition-3);
+}
+[data-section].active > *{
+    opacity: 1;
+    transform: translateY(0);
+}*/
+.h1,
+.h2,
+.h3{
+    color: var(--white);
+    line-height: 1.1;
+}
+.h1{ font-size: var(--fs-1); }
+.h2{ font-size: var(--fs-2); }
+.h3{ font-size: var(--fs-3); }
+.w-100{
+    width: 100%;
+}
 
 /* Header */
 .header{
