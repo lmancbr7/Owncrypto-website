@@ -170,6 +170,17 @@ body.active{ overflow: hidden; }
 .w-100{
     width: 100%;
 }
+.badge{
+    color: var(--white);
+    font-size: var(--fs-8);
+    font-weight: var(--fw-700);
+    padding: 4px 8px;
+    border-radius: 50px;
+}
+.badge.red{ background-color: var(--presian-red); }
+.badge.green{ background-color: var(--medium-sea-green); }
+.last-update.red{ color: var(--presian-red); }
+.last-update.green{ color: var(--medium-sea-green); }
 
 /* Header */
 .header{
@@ -332,3 +343,32 @@ body.active{ overflow: hidden; }
     gap: 8px;
 }
 .trend-card .current-price{ font-size: var(--fs-7); }
+
+/* Market */
+.market{
+    background-color: var(--eerie-black-1);
+    color: var(--white);
+}
+.market .title-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-block-end: 25px;
+}
+.market .btn-link{
+    position: relative;
+    font-weight: var(--fw-700);
+    transition: var(--transition-1);
+}
+.market .btn-link:is(:hover, :focus){ color: var(--blue-crayola); }
+.market .btn-link::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--raisin-black);
+    transition: var(--transition-1);
+}
