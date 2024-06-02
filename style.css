@@ -181,6 +181,10 @@ body.active{ overflow: hidden; }
 .badge.green{ background-color: var(--medium-sea-green); }
 .last-update.red{ color: var(--presian-red); }
 .last-update.green{ color: var(--medium-sea-green); }
+.section-text{
+    font-size: var(--fs-5);
+    margin-block: 15px 35px;
+}
 
 /* Header */
 .header{
@@ -451,4 +455,13 @@ body.active{ overflow: hidden; }
 .market-table .table-row:is(:hover, :focus-within) .btn-outline{
     background-color: var(--blue-crayola);
     border-color: var(--blue-crayola);
+}
+
+/* Instruction */
+.instruction :is(.section-title, .section-text){ text-align: center; }
+.instruction .section-title{ margin-block-end: 15px; }
+.instruction-list{
+    display: grid;
+    gap: 30px;
+    margin-block-start: 50px;
 }
