@@ -149,7 +149,7 @@ body.active{ overflow: hidden; }
     opacity: 1;
 }
 .section{ padding-block: var(--section-padding); }
-/*[data-section] > *{
+[data-section] > *{
     transform: translateY(50px);
     opacity: 0;
     transition: var(--transition-3);
@@ -157,7 +157,7 @@ body.active{ overflow: hidden; }
 [data-section].active > *{
     opacity: 1;
     transform: translateY(0);
-}*/
+}
 .h1,
 .h2,
 .h3{
