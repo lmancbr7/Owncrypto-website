@@ -198,6 +198,10 @@ body.active{ overflow: hidden; }
     color: var(--blue-crayola);
     font-size: 24px;
 }
+address{
+    font-style: normal;
+    font-family: sans-serif;
+}
 
 /* Header */
 .header{
@@ -526,3 +530,21 @@ body.active{ overflow: hidden; }
     border: 2px solid var(--white);
     border-radius: 50px;
 }
+
+/* Footer */
+.footer-top{
+    background-color: var(--eerie-black-1);
+    padding-block: 80px 50px;
+}
+.footer-top .container{
+    display: grid;
+    gap: 50px;
+}
+.footer .logo{ font-size: 3rem; }
+.footer-title{
+    color: var(--white);
+    font-size: var(--fs-3);
+    margin-block: 25px 20px;
+}
+.footer-contact-link:not(:last-child){ margin-block-end: 12px; }
+address.footer-contact-link{ max-width: 30ch; }
