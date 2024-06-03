@@ -499,3 +499,19 @@ body.active{ overflow: hidden; }
 /* About */
 .about{ background-color: var(--eerie-black-1); }
 .about-banner{ margin-block-end: 40px; }
+
+/* App */
+.app{
+    overflow: hidden;
+    padding-block-end: 0;
+}
+.app-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+.app-banner{
+    position: relative;
+    margin-block-start: 60px;
+}
