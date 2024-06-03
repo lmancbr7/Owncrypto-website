@@ -185,6 +185,19 @@ body.active{ overflow: hidden; }
     font-size: var(--fs-5);
     margin-block: 15px 35px;
 }
+.section-list{ margin-block-end: 35px; }
+.section-item:not(:last-child){ margin-block-end: 25px; }
+.section-item .title-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-block-end: 15px;
+}
+.section-item .title-wrapper ion-icon{
+    flex-shrink: 0;
+    color: var(--blue-crayola);
+    font-size: 24px;
+}
 
 /* Header */
 .header{
@@ -482,3 +495,7 @@ body.active{ overflow: hidden; }
     margin-block: 5px 15px;
 }
 .instruction-card .card-text{ padding-block: 20px; }
+
+/* About */
+.about{ background-color: var(--eerie-black-1); }
+.about-banner{ margin-block-end: 40px; }
